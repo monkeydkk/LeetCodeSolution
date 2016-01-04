@@ -1,5 +1,8 @@
 package com.leetcode.test;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+
 import com.leetcode.common.ListNode;
 import com.leetcode.common.PrintArray;
 import com.leetcode.common.PrintListNode;
