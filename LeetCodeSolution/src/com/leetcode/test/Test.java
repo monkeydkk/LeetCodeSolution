@@ -6,36 +6,21 @@ import java.sql.ResultSet;
 import com.leetcode.common.ListNode;
 import com.leetcode.common.PrintArray;
 import com.leetcode.common.PrintListNode;
-import com.leetcode.solution.AddTwoNumbers;
-import com.leetcode.solution.LongestSubstringWithoutRepeatingCharacters;
-import com.leetcode.solution.MedianofTwoSortedArrays;
-import com.leetcode.solution.TwoSum;
+import com.leetcode.solution.ZigZagConversion;
 
 public class Test {
-	public static int getInitial(int n) {
-        for(int i=n+1;;i++) {
-            int temp=i;
-            int bear=n;
-            while(bear>0) {
-                 
-                if(temp%n==1){
-                    temp=temp-temp/n-1;
-                    bear--;
-                }else {
-                    break;
-                }
-                 
-            }
-            if(bear==0) {
-                return i; 
-            }
-        }
-    }
 
 	public static void main(String[] args){ 
-		System.out.println("start");
-		System.out.println(getInitial(9));
-		System.out.println("end");
+		/**
+		 * No.5 ZigZag Conversion
+		 */
+			String input="PAYPALISHIRING";
+			String output;
+			System.out.println("input:");
+			System.out.println(input);
+			System.out.println("output:");
+			output=ZigZagConversion.zigZagConversion(input,3);
+			System.out.print(output);
 		/**
 		 * No.4 Median of Two Sorted Arrays
 		 */
@@ -48,7 +33,7 @@ public class Test {
 //			System.out.print("nums2:{");
 //			PrintArray.printArray(nums2);
 //			System.out.println("}");
-//			System.out.print("the median of the two sorted arrays is:¡¾"+result+"¡¿");
+//			System.out.print("the median of the two sorted arrays is:ï¿½ï¿½"+result+"ï¿½ï¿½");
 		/**
 		 * No.3 Longest Substring Without Repeating Characters
 		*/
@@ -82,7 +67,7 @@ public class Test {
 //				System.out.print(",");
 //		}
 //		System.out.println("},target="+target);
-//		System.out.print("output£ºindex1="+result[0]);
+//		System.out.print("outputï¿½ï¿½index1="+result[0]);
 //		System.out.print(",index2="+result[1]);
 	}
 }
